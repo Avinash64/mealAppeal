@@ -17,6 +17,7 @@ const restrictions = ref(["Vegetarian",
   "Sugar-Free",
   "Organic"]);
 
+
 var x = document.getElementById("demo");
 
 function getLocation() {
