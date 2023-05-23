@@ -231,7 +231,9 @@ onMounted(() => {
 <style scoped>
 .map {
     width: 100vw;
+    max-width: 50vh;
     height: 100vw;
+    max-height: 50vh;
     background-color: gray;
     display: flex;
     flex-direction: column;
