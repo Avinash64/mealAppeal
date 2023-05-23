@@ -189,6 +189,481 @@ const places = ref([
         "preferences": ["Vegetarian", "Vegan"]
       }
     ]
+  },
+  {
+    "name": "The Steakhouse",
+    "location": {
+      "latitude": 40.759784,
+      "longitude": -73.977972
+    },
+    "menu": [
+      {
+        "name": "T-bone Steak",
+        "price": 29.99,
+        "preferences": []
+      },
+      {
+        "name": "Grilled Salmon",
+        "price": 24.99,
+        "preferences": []
+      }
+    ]
+  },
+  {
+    "name": "Café Italia",
+    "location": {
+      "latitude": 40.764593,
+      "longitude": -73.981028
+    },
+    "menu": [
+      {
+        "name": "Margherita Pizza",
+        "price": 14.99,
+        "preferences": ["Vegetarian"]
+      },
+      {
+        "name": "Chicken Parmesan",
+        "price": 17.99,
+        "preferences": []
+      },
+      {
+        "name": "Tiramisu",
+        "price": 9.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Sushi Express",
+    "location": {
+      "latitude": 40.756846,
+      "longitude": -73.975255
+    },
+    "menu": [
+      {
+        "name": "California Roll",
+        "price": 12.99,
+        "preferences": []
+      },
+      {
+        "name": "Salmon Nigiri",
+        "price": 8.99,
+        "preferences": []
+      },
+      {
+        "name": "Miso Soup",
+        "price": 4.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      }
+    ]
+  },
+  {
+    "name": "Spice Fusion",
+    "location": {
+      "latitude": 40.762468,
+      "longitude": -73.984714
+    },
+    "menu": [
+      {
+        "name": "Pad Thai",
+        "price": 15.99,
+        "preferences": ["Vegetarian"]
+      },
+      {
+        "name": "Green Curry",
+        "price": 16.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      },
+      {
+        "name": "Mango Sticky Rice",
+        "price": 8.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Bistro 52",
+    "location": {
+      "latitude": 40.768173,
+      "longitude": -73.978954
+    },
+    "menu": [
+      {
+        "name": "Filet Mignon",
+        "price": 32.99,
+        "preferences": []
+      },
+      {
+        "name": "Shrimp Scampi",
+        "price": 26.99,
+        "preferences": ["Shellfish-Free"]
+      },
+      {
+        "name": "Crème Brûlée",
+        "price": 10.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Taste of India",
+    "location": {
+      "latitude": 40.763647,
+      "longitude": -73.985587
+    },
+    "menu": [
+      {
+        "name": "Butter Chicken",
+        "price": 18.99,
+        "preferences": []
+      },
+      {
+        "name": "Vegetable Biryani",
+        "price": 15.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      },
+      {
+        "name": "Gulab Jamun",
+        "price": 7.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "The Burger Bar",
+    "location": {
+      "latitude": 40.767427,
+      "longitude": -73.979615
+    },
+    "menu": [
+      {
+        "name": "Classic Cheeseburger",
+        "price": 12.99,
+        "preferences": []
+      },
+      {
+        "name": "BBQ Bacon Burger",
+        "price": 14.99,
+        "preferences": []
+      },
+      {
+        "name": "Sweet Potato Fries",
+        "price": 6.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      }
+    ]
+  },
+  {
+    "name": "Noodle House",
+    "location": {
+      "latitude": 40.765985,
+      "longitude": -73.982831
+    },
+    "menu": [
+      {
+        "name": "Beef Chow Mein",
+        "price": 13.99,
+        "preferences": []
+      },
+      {
+        "name": "Vegetable Lo Mein",
+        "price": 12.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      },
+      {
+        "name": "Egg Drop Soup",
+        "price": 4.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Pizzeria Bella",
+    "location": {
+      "latitude": 40.766548,
+      "longitude": -73.984221
+    },
+    "menu": [
+      {
+        "name": "Pepperoni Pizza",
+        "price": 14.99,
+        "preferences": []
+      },
+      {
+        "name": "Margherita Pizza",
+        "price": 13.99,
+        "preferences": ["Vegetarian"]
+      },
+      {
+        "name": "Caprese Salad",
+        "price": 8.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Thai Garden",
+    "location": {
+      "latitude": 40.765207,
+      "longitude": -73.982101
+    },
+    "menu": [
+      {
+        "name": "Green Curry",
+        "price": 16.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      },
+      {
+        "name": "Pad See Ew",
+        "price": 14.99,
+        "preferences": []
+      },
+      {
+        "name": "Mango Sticky Rice",
+        "price": 7.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Taco Fiesta",
+    "location": {
+      "latitude": 40.766951,
+      "longitude": -73.985592
+    },
+    "menu": [
+      {
+        "name": "Chicken Tacos",
+        "price": 11.99,
+        "preferences": []
+      },
+      {
+        "name": "Vegetable Quesadilla",
+        "price": 10.99,
+        "preferences": ["Vegetarian"]
+      },
+      {
+        "name": "Churros",
+        "price": 5.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Mediterranean Delight",
+    "location": {
+      "latitude": 40.762163,
+      "longitude": -73.979021
+    },
+    "menu": [
+      {
+        "name": "Chicken Shawarma",
+        "price": 15.99,
+        "preferences": []
+      },
+      {
+        "name": "Falafel Platter",
+        "price": 13.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      },
+      {
+        "name": "Baklava",
+        "price": 6.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Pasta Paradise",
+    "location": {
+      "latitude": 40.764918,
+      "longitude": -73.980517
+    },
+    "menu": [
+      {
+        "name": "Chicken Alfredo",
+        "price": 17.99,
+        "preferences": []
+      },
+      {
+        "name": "Vegetable Primavera",
+        "price": 15.99,
+        "preferences": ["Vegetarian"]
+      },
+      {
+        "name": "Tiramisu",
+        "price": 8.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Café Paris",
+    "location": {
+      "latitude": 40.769287,
+      "longitude": -73.980656
+    },
+    "menu": [
+      {
+        "name": "Croque Monsieur",
+        "price": 13.99,
+        "preferences": []
+      },
+      {
+        "name": "Quiche Lorraine",
+        "price": 12.99,
+        "preferences": ["Vegetarian"]
+      },
+      {
+        "name": "Crème Brûlée",
+        "price": 9.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Indian Spice",
+    "location": {
+      "latitude": 40.767687,
+      "longitude": -73.982791
+    },
+    "menu": [
+      {
+        "name": "Butter Chicken",
+        "price": 16.99,
+        "preferences": []
+      },
+      {
+        "name": "Palak Paneer",
+        "price": 14.99,
+        "preferences": ["Vegetarian"]
+      },
+      {
+        "name": "Gulab Jamun",
+        "price": 7.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Seafood Cove",
+    "location": {
+      "latitude": 40.768735,
+      "longitude": -73.983621
+    },
+    "menu": [
+      {
+        "name": "Lobster Roll",
+        "price": 19.99,
+        "preferences": ["Shellfish-Free"]
+      },
+      {
+        "name": "Shrimp Scampi",
+        "price": 18.99,
+        "preferences": []
+      },
+      {
+        "name": "Key Lime Pie",
+        "price": 7.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Mama Mia's",
+    "location": {
+      "latitude": 40.767328,
+      "longitude": -73.984418
+    },
+    "menu": [
+      {
+        "name": "Margherita Pizza",
+        "price": 13.99,
+        "preferences": ["Vegetarian"]
+      },
+      {
+        "name": "Meatball Sub",
+        "price": 15.99,
+        "preferences": []
+      },
+      {
+        "name": "Cannoli",
+        "price": 6.99,
+        "preferences": ["Vegetarian"]
+      }
+    ]
+  },
+  {
+    "name": "Taste of Japan",
+    "location": {
+      "latitude": 40.766582,
+      "longitude": -73.984725
+    },
+    "menu": [
+      {
+        "name": "Sushi Platter",
+        "price": 21.99,
+        "preferences": []
+      },
+      {
+        "name": "Chicken Teriyaki",
+        "price": 16.99,
+        "preferences": []
+      },
+      {
+        "name": "Miso Soup",
+        "price": 4.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      }
+    ]
+  },
+  {
+    "name": "Veggie Delight",
+    "location": {
+      "latitude": 40.763986,
+      "longitude": -73.985269
+    },
+    "menu": [
+      {
+        "name": "Veggie Burger",
+        "price": 11.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      },
+      {
+        "name": "Portobello Mushroom Sandwich",
+        "price": 13.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      },
+      {
+        "name": "Sweet Potato Fries",
+        "price": 5.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      }
+    ]
+  },
+  {
+    "name": "Noodle World",
+    "location": {
+      "latitude": 40.765396,
+      "longitude": -73.986392
+    },
+    "menu": [
+      {
+        "name": "Beef Pad Thai",
+        "price": 14.99,
+        "preferences": []
+      },
+      {
+        "name": "Vegetable Stir-Fry Noodles",
+        "price": 12.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      },
+      {
+        "name": "Spring Rolls",
+        "price": 6.99,
+        "preferences": ["Vegetarian", "Vegan"]
+      }
+    ]
   }
 ]
 
