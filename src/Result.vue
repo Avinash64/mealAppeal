@@ -3,6 +3,7 @@ import { reactive, ref, onMounted } from 'vue';
 import Map from './Map.vue';
 import { useRouter } from 'vue-router';
 
+const promoted = ref(Math.random())
 const router = useRouter();
 const search = () => {
     return {
@@ -31,6 +32,7 @@ const long = ref(0);
 const preferences = ref(['Preferances']);
 
 
+
 function getRandomRestaurant(jsonData) {
   // Parse the JSON data
   const restaurants = jsonData;
@@ -55,6 +57,7 @@ function getRandomRestaurant(jsonData) {
   preferences.value = randomMenuItem.preferences
   lat.value = latitude
   long.value = longitude
+  promoted.value = Math.random()
   // Return the selected restaurant and menu item as an object
   return {
     latitude: latitude,
@@ -212,11 +215,16 @@ onMounted(() => {
     
 </nav>
 <div class="results">
-  <h1 class="title">{{ dish }}</h1>
+  <div>
+
+    <h1 class="title">{{ dish }}</h1>
+    <div v-if="promoted > 0.8" style="color: rgb(101, 183, 97);"><span class="badge bg-success">Featured</span></div>
+  </div>
   <div class="menu-item">
       <h2>{{ restaurantName }}</h2>
         <div class="price">{{price}}</div>
         <div class="preferances">{{preferences}}</div>
+
     </div>
     <div class="map">
         <Map v-bind:lat="lat" v-bind:long="long"></Map>
