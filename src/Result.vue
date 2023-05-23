@@ -1,5 +1,9 @@
 <script setup>
 import { reactive, ref, onMounted } from 'vue';
+import Map from './Map.vue';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 const search = () => {
     return {
   "location": "41.0895249,-73.8419063",
@@ -186,9 +190,9 @@ const places = ref([
 ]
 
 )
+getRandomRestaurant(places.value)
 onMounted(() => {
 
-    getRandomRestaurant(places.value)
 }
 
 )
@@ -199,25 +203,23 @@ onMounted(() => {
 
         <nav class="navbar header">
             <div class="container-fluid h-100">
-                <a class="navbar-brand" routerLink="/">Meal Appeal</a>
+                <a class="navbar-brand" >Meal Appeal</a>
 
         <span class="navbar-text">
-            <button class="btn btn-primary">Search</button>
+            <button class="btn btn-primary" @click="router.push('/')">Search</button>
         </span>
     </div>
     
 </nav>
-<div>
-    <h1>{{ restaurantName }}</h1>
-    <div class="menu-item">
-        <div class="title">{{ dish }}</div>
+<div class="results">
+  <h1 class="title">{{ dish }}</h1>
+  <div class="menu-item">
+      <h2>{{ restaurantName }}</h2>
         <div class="price">{{price}}</div>
         <div class="preferances">{{preferences}}</div>
-        <div class="title">{{ distance }}</div>
     </div>
     <div class="map">
-        <div>{{ lat }}</div>
-        <div>{{ long }}</div>
+        <Map v-bind:lat="lat" v-bind:long="long"></Map>
     </div>
     <button class="btn btn-primary w-75" @click="console.log(getRandomRestaurant(places))">Search Again</button>
     
@@ -251,10 +253,20 @@ onMounted(() => {
     align-items: center;
     width: 100%;
     height: 100vh;
+    background-color: #e8e8e8 ;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
 
 .footer {
     background-color: red;
     height: 5%;
+    width: 100%;
 }
 </style>
