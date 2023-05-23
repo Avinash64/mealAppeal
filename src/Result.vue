@@ -203,10 +203,10 @@ onMounted(() => {
 
         <nav class="navbar header">
             <div class="container-fluid h-100">
-                <a class="navbar-brand" >Meal Appeal</a>
+                <a class="navbar-brand" @click="router.push('/')" >Meal Appeal</a>
 
         <span class="navbar-text">
-            <button class="btn btn-primary" @click="router.push('/')">Search</button>
+            <button class="btn btn-primary" @click="router.push('/search')">Search</button>
         </span>
     </div>
     

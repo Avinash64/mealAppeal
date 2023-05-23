@@ -52,7 +52,7 @@ const search = () => {
   <div class="searchPage">
     <nav class="navbar header">
       <div class="container-fluid h-100">
-        <a class="navbar-brand" routerLink="/">Meal Appeal</a>
+        <a class="navbar-brand" @click="router.push('/')">Meal Appeal</a>
 
         <span class="navbar-text">
           <button class="btn btn-primary">Search</button>
